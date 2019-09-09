@@ -6,7 +6,6 @@ import alerts from './modules/utilities/alerts'
 import snackbars from './modules/utilities/snackbars'
 import toolbar from './modules/toolbar'
 import userAuthentication from './modules/userAuthentication'
-import setting from './modules/setting'
 import users from './modules/users'
 import roles from './modules/roles'
 
@@ -22,7 +21,6 @@ export default new Vuex.Store({
     snackbars,
     toolbar,
     userAuthentication,
-    setting,
     users,
     roles
   }

@@ -84,7 +84,7 @@ export default {
 
 <style>
 html {
-  overflow-y: hidden;
+  overflow-y: auto;
 }
 
 .login-background {

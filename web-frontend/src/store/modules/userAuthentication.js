@@ -16,7 +16,7 @@ const actions = {
     { dispatch, commit, state, rootState, getters, rootGetters },
     payload
   ) {
-    let url = `${rootState.setting.apiUrl}/user/login`;
+    let url = `${process.env.VUE_APP_API_BACKEND}/user/login`;
     let data = payload;
     let config = {
       "Content-Type": "application/json"
@@ -49,7 +49,7 @@ const actions = {
       });
   },
   setLogout({ dispatch, commit, state, rootState, getters, rootGetters }) {
-    let url = `${rootState.setting.apiUrl}/user/logout`;
+    let url = `${process.env.VUE_APP_API_BACKEND}/user/logout`;
     let data = {
       username: state.userInfo.username,
       token: localStorage.getItem("token")
